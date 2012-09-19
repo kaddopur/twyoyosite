@@ -1,0 +1,121 @@
+extends base
+
+append css
+  link(rel='stylesheet', href='/css/know.css')
+
+block page
+  ul.breadcrumb
+    li
+      a(href='/#') 首頁
+      span.divider / 
+    li.active 溜溜球的基本知識
+  h2 溜溜球的基本知識
+  .alert.alert-info.sec
+    #part.sec-title 部位名稱
+  .sec-body
+    .alert.alert-warning 零件、部位類
+    ul.unstyled
+      li 球體(半面)
+      li 球體表面
+      li 球體內壁
+      li 球體外唇
+      li 拇指溝
+      li 外蓋(火罩)
+      li 墊片
+      li 軸承墊片
+      li 墊片座
+      li 軸承(C環、防塵蓋)
+      li 軸承表面
+      li 軸承座
+      li 回收系統
+      li 回收座
+      li 回收內壁
+      li 膠貼、O-ring、矽膠
+      li 軸心
+      li 螺牙
+      li 側邊軸承
+      li 側邊軸承套
+      li 側邊軸承座
+      li 側邊固定環
+    .alert.alert-warning 數值類
+    ul.unstyled 球體直徑
+      li 球體寬度
+      li 球體有效上線距離
+      li 回收系統間距
+      li 球體重量
+  .alert.alert-info.sec
+    #material.sec-title 材質分類
+  .sec-body
+    p 原木材質
+    p 塑膠材質
+    p 內加重環
+    p 外加重環
+    p 全金屬
+  .alert.alert-info.sec
+    #profile.sec-title 球形分類
+  .sec-body
+    p 圓弧形
+    p 直線型
+    p H型
+    p 反弧形
+    p 平面外環型
+    p 階段式直線型
+    p 階段式圓弧形
+    p ZS型
+    p 經典快打型
+    p 一般快打型(全能型)
+    p 離線型    
+  .alert.alert-info.sec
+    #bearing.sec-title 軸承分類
+  .sec-body
+    .alert.alert-warning 固定軸心
+    .alert.alert-warning 尼龍軸承
+    .alert.alert-warning 金屬滾珠軸承
+    .alert.alert-warning 溜溜球上用的金屬軸承分類
+    .alert.alert-warning 軸承壽命
+    .alert.alert-warning 游標卡尺使用
+  .alert.alert-info.sec
+    #return.sec-title 回收方式分類
+  .sec-body
+    .alert.alert-warning 直接回收型
+    p 當你想要回收時，只要將手拉回來，球就會直接的產生回收力將球回收。過去的溜溜球幾乎是這種設定，比較常用在初學者或是快打玩家
+    dl.dl-horizontal
+      dt 優點
+      dd 可以不用綁線回收，可以玩編繩類型及快打類型的招式
+      dt 缺點
+      dd 空轉時間較短，有可能在非預期的時候回收
+    .alert.alert-warning 綁線回收型
+    p 現在販售的溜溜球大多是此種設定，特別是高階金屬球。此種球只有在綁線回收時才會產生回收力，適合任何複雜招式的練習。
+    dl.dl-horizontal 
+      dt 優點
+      dd 空轉時間長，任何時候都不易回收，除非你使用綁線收球法
+      dt 缺點
+      dd 如果沒有學習綁線回收法，將無法收球
+  .alert.alert-info.sec
+    #response.sec-title 回收系統分類
+  .sec-body
+    p 回收系統為溜溜球啟動時人體力量轉與轉動力互相轉換的重要零件，不同回收系統有不同的特性及其適合的花式類型，以下將介紹各種常見的回收系統。
+    .alert.alert-warning 無回收系統
+    p 利用回收平面寬度來造成摩擦力，達到回收效果。
+    .alert.alert-warning 離合器回收系統
+    p 多為尼龍軸承類型搭配星紋回收系統的溜溜球，是屬於入門玩家級使用的溜溜球，不管高速或是低速下都可以回收，讓玩家習慣回收時的轉速、手感的訓練用溜溜球。
+    .alert.alert-warning 星紋回收系統
+    p 軸承類全能型溜溜球常見的回收系統，優點是咬線敏感、迅速，但是低轉速下回收效果不彰，而且如果常處於高速回收會產生高溫狀態，星紋將容易磨損，但是其獨特的手感相當受2A玩家喜愛，目前常見於Yomega的全能型快打溜溜球。
+    .alert.alert-warning 反星紋回收系統
+    .alert.alert-warning 彈性星紋回收系統
+    p 為新一代的星紋回收方式，結合了膠貼的彈性、與星紋的高抓線性能、耐用性，也是新手們相當適合練習用的回收系統。後期更可拆開將星紋去除改成多孔回收、膠貼回收來使用。
+    .alert.alert-warning 多孔回收系統
+    p 回收能力較無回收系統的回收力強，線上滑順、不易咬線，有分為三孔回收與四孔回收，過去曾經用在1A溜溜球上，目前則是部份4A玩家們喜愛的回收系統之一。
+    .alert.alert-warning O環回收系統
+    p 回收能力強、回收系統突出於回收內壁，但是損耗率極低，相當容易保養維護，非常推薦初學玩家使用。也有部分玩家將O環凸出的部分磨去，可以稍稍減低回收力量及敏感度。
+    .alert.alert-warning 星紋O環混合式回收系統
+    p 為星紋與O環回收的折衷型，YYJ公司前期部份球種皆此種回收設計。
+    .alert.alert-warning 軟木膠貼回收系統
+    p 為DUNCAN初期入門球的回收設計，也是所有膠貼回收的始祖，現今已不常見。
+    .alert.alert-warning 膠貼回收系統
+    P 為DUNCAN近年入門球的回收設計，是以一片膠材作為回收的摩擦力來源，是一般玩家都可以自製的回收系統，不過回收強度會隨該膠材的消耗而喪失，回收手感會一直改變，較多1A玩家喜愛此種回收系統。
+    .alert.alert-warning 流體矽膠回收系統
+    p 當時矽膠膠貼還未普及前，大家是利用O-ring的回收槽來填充流體矽膠，此種回收系統有收線緊實、回收力強硬、線上滑順等特色，但是損耗率較高，玩家必須等待矽膠完全乾糙才能使用。
+    .alert.alert-warning 矽膠膠貼回收系統
+    p 改善了流體矽膠的缺點，較流體矽膠方便安裝、不必等待矽膠乾燥，另外也開始有相當多尺寸、材質可以選擇，相當受1A、3A、4A、5A玩家歡迎，為現代溜溜球主要的回收系統。
+

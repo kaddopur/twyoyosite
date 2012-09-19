@@ -1,0 +1,61 @@
+extends base
+
+append css
+  link(rel='stylesheet', href='/css/select.css')
+
+block page
+  ul.breadcrumb
+    li
+      a(href='/#') 首頁
+      span.divider / 
+    li.active 溜溜球的選擇
+  h2 溜溜球的選擇
+  .alert.alert-info.sec
+    #buy.sec-title 選購方向
+  .sec-body
+    table.table.table-striped.table-bordered
+      thead
+        tr
+          th.span3 溜溜球分類
+          th 適用溜溜球類型
+      tbody
+        tr
+          td 第一次接觸溜溜球
+          td 從未接觸過溜溜球的玩家，適合使用離合器類、尼龍軸承類全能型溜溜球。空轉速度較低，回收力量、速度也都比較低，易於培養回收手感。此球種目的在於培養興趣、回收容易及保養方便。
+        tr
+          td 初學型溜溜球
+          td 開始進入初學招式，適合軸承類全能型溜溜球，軸承類能夠產生較多的空轉時間，適合做簡單的編繩招式、快打花式及傳統溜溜球招式。
+        tr
+          td 初級型溜溜球
+          td 開始進入上線類型的招式後，適合使用軸承類蝶翼型塑膠溜溜球，空轉時間更長、上線有效範圍加大，因為回收力比前期的溜溜球更為低，必須開始學習綁線收球。
+        tr 
+          td 單手線上花式用溜溜球
+          td 可以開始使用更高階的內加重環、外加重環或是全金屬材質溜溜球，強大的空轉力與球體穩定性可以做出更多複雜的花式，但是此類球種必須十分注意安全。
+        tr
+          td 雙手迴旋花式用溜溜球
+          td 大多數雙手迴旋玩家選用軸承類星紋回收系統的全能型溜溜球，著重於油品濃度、回收寬度、墊片高度...等等。
+        tr 
+          td 雙手線上花式用溜溜球
+          td 與單手線上花式用溜溜球相同，
+        tr
+          td 離線花式用溜溜球
+          td 通常使用較大、較重的離線型溜溜球，增加了玩家的接球寬度與空轉強度，以全塑膠球體較為常見。
+        tr
+          td 離手花式用溜溜球
+          td 與單手線上花式用溜溜球相同，但是較著重愈重物的重量與大小。
+    
+  .alert.alert-info.sec
+    #sensitive.sec-title 回收力敏感的溜溜球
+  .alert.alert-info.sec
+    #bing.sec-title 需綁線回收的溜溜球
+  .alert.alert-info.sec
+    #material.sec-title 材質挑選
+  .alert.alert-info.sec
+    #profile.sec-title 球形挑選
+  .alert.alert-info.sec
+    #bearing.sec-title 軸承類型挑選
+  .alert.alert-info.sec
+    #response.sec-title 回收系統挑選
+  .alert.alert-info.sec
+    #diameter.sec-title 球徑與重量
+
