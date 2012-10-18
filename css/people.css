@@ -1,0 +1,21 @@
+h1 {
+  font-size: 120px;
+  line-height: 120px;
+  padding-top: 24px;
+  margin-top: 60px;
+}
+h2.section_title {
+  font-size: 24px;
+  padding-left: 14px;
+  color: #fcfaf2;
+  background-color: #211e55;
+  margin-top: 100px;
+}
+h3 {
+  color: #211e55;
+  font-size: 20px;
+  line-height: 20px;
+}
+.profile img {
+  width: 96%;
+}

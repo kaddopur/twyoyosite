@@ -1,0 +1,83 @@
+extends base
+
+append css
+  link(rel='stylesheet', href='/css/people.css')
+
+block page
+  .container
+    .row.profile
+      .span12
+        h1 名人集
+        h2.section_title 頂尖選手
+        ul#top-player.breadcrumb
+          li
+            a(href='/#') 首頁
+            span.divider /
+          li
+            a(href='/people#') 名人集
+            span.divider / 
+          li.active 頂尖選手
+      .span3
+        h3 
+          i.icon-user
+          | 郭子瑋 (瑋魚)
+        img.img-polaroid(src='/img/profile/ziwei.jpg')
+        dl
+          dt 個人簡介
+          dd 哈囉!我是郭子瑋 大家都叫我瑋魚, 雖然在2012TYYC我拿下了冠軍, 但是眼前還有更困難的關卡等著我們, 希望我們可以為溜溜球界一起努力, 達成願望:)
+          dt 地區
+          dd 台北
+          dt 專長花式
+          dd 1A單手線上花式
+          dt 所屬隊伍
+          dd Adegleyoyos, 台北聚會
+          dt 起始年份
+          dd 2008
+          dt 重要賽事頭銜
+          dd
+            ul.unstyled
+              li 2010 台灣溜溜球大賽 TYYC 新人王
+              li 2012 台灣溜溜球大賽 TYYC 1A 冠軍
+          dt Facebook
+          dd
+            a(href='https://www.facebook.com/kuo.t.wei.3') https://www.facebook.com/kuo.t.wei.3
+          dt e-mail
+          dd brucekuo1126 [AT] yahoo.com.tw
+      .span3
+        h3 
+          i.icon-user
+          | 黃麟凱 (阿凱)
+        img.img-polaroid(src='/img/profile/linkai.jpg')
+        dl
+          dt 個人簡介
+          dd 大家好，我是來自新竹的阿凱，目前為新竹互動式溜溜球協會的副團長，也是裕和商店的設計師跟負責人。不僅只是練溜溜球，同時還設計、製造、販賣、教學及推廣溜溜球。希望讓不懂溜溜球的人都能輕易地愛上這個構造簡單的玩具。
+          dt 地區
+          dd 新竹
+          dt 專長花式
+          dd 5A離手線上花式
+          dt 所屬隊伍
+          dd Adegleyoyos, Eigenstate, HIYA
+          dt 起始年份
+          dd 2006
+          dt 重要賽事頭銜
+          dd
+            ul.unstyled
+              li 2007 台灣溜溜球大賽 TYYC 5A 冠軍
+              li 2008 台灣溜溜球大賽 TYYC 5A 冠軍
+              li 2010 亞洲溜溜球大賽 AP 5A 5th
+          dt Facebook
+          dd
+            a(href='https://www.facebook.com/linkai.huang') https://www.facebook.com/linkai.huang
+          dt e-mail
+          dd leoleo168 [AT] gmail.com
+    .row.profile
+      .span12
+        h2.section_title 表演家
+        ul#performer.breadcrumb
+           li
+             a(href='/#') 首頁
+             span.divider /
+           li
+             a(href='/people#') 名人集
+             span.divider / 
+           li.active 表演家
