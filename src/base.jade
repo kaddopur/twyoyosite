@@ -2,7 +2,7 @@
 
 html(lang='zh-TW')
   head
-    title 台灣溜溜球網
+    title yo-yo.tw 溜溜球情報、教學、交流
     block js
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
     block css
@@ -10,21 +10,24 @@ html(lang='zh-TW')
       link(rel='stylesheet', href='/css/base.css')
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic')
   body
-    .navbar.navbar-static-top
+    #main_nav.navbar.navbar-static-top
       .navbar-inner
         .container
           ul.nav
-            li 
-              a(href='/#') 首頁
-          ul.nav.pull-right
-            li#logo-circle
+            li#logo
               a(href='/#')
-                img.img-circle(src='/img/f_logo.png')
+                img(src='/img/nav_logo.png')
+          ul.nav.pull-right
+            li#social-link
+              a(href='https://www.facebook.com/pages/yo-yotw-%E6%BA%9C%E6%BA%9C%E7%90%83%E6%83%85%E5%A0%B1%E6%95%99%E5%AD%B8%E4%BA%A4%E6%B5%81/421497014580985?fref=ts', target='_blank')
+                img(src='/img/f_logo.png')
+      
     #cover
       .container
-        h1 yo-yo.tw
-        small 關於溜溜球的所有大小事！從初學者到競技溜溜球選手，提供給您各式各樣的溜溜球情報。
-    .container
+        img(src='/img/cover.png')
+
+        //small 關於溜溜球的所有大小事！從初學者到競技溜溜球選手，提供給您各式各樣的溜溜球情報。
+    //-.container
       .row
         .span3
           ul.nav.nav-list
@@ -90,12 +93,17 @@ html(lang='zh-TW')
           block page
     #footer
       .container
-        small 
-          | Designed by 
-          a(href='http://twitter.com/kaddopur') @kaddopur
         small.pull-right
           a(href='#') 回到頂端
-          
+        dl
+          dt Designed by 
+          dd 
+            a(href='http://twitter.com/kaddopur', target='_blank') @kaddopur
+          p
+          dt Sponsored by
+          dd
+            a(href='http://www.adegle.com/', target='_blank')
+              img(src='/img/adegle_logo.png')
 
     
 
