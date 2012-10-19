@@ -3,12 +3,18 @@ extends base
 append css
   link(rel='stylesheet', href='/css/people.css')
 
+append js
+  script 
+    $(document).ready(function(){
+      $('#nav_people').addClass('active');
+    });
+
 block page
   .container
     .row
       .span12
         h1 &#9700;名人集
-        h2#top-player.section_title 頂尖選手
+        h2#top-player.section_title.shift 　頂尖選手
         ul.breadcrumb
           li
             a(href='/#') 首頁

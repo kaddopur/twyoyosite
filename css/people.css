@@ -18,6 +18,9 @@ h3 {
   line-height: 20px;
   font-family: sans-serif;
 }
+.profile {
+  margin-bottom: 80px;
+}
 .profile img {
   width: 96%;
 }

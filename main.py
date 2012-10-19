@@ -50,10 +50,10 @@ class PrepareHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('prepare.html')
     self.response.out.write(template.render(template_values))
 
-class BuyHandler(webapp2.RequestHandler):
+class MeetingHandler(webapp2.RequestHandler):
   def get(self):
     template_values = {}
-    template = jinja_environment.get_template('buy.html')
+    template = jinja_environment.get_template('meeting.html')
     self.response.out.write(template.render(template_values))
 
 class PeopleHandler(webapp2.RequestHandler):
@@ -63,10 +63,6 @@ class PeopleHandler(webapp2.RequestHandler):
     self.response.out.write(template.render(template_values))
 
 app = webapp2.WSGIApplication([('/', MainHandler),
-                               ('/what', WhatHandler),
-                               ('/knowledge', KnowHandler),
-                               ('/select', SelectHandler),
-                               ('/prepare', PrepareHandler),
-                               ('/buy', BuyHandler),
+                               ('/meeting', MeetingHandler),
                                ('/people', PeopleHandler)],
                               debug=True)
