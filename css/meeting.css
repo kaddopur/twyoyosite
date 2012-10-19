@@ -23,3 +23,9 @@ h3 {
 .profile img {
   width: 96%;
 }
+.profile a {
+  text-decoration: none;
+}
+.profile iframe {
+  width: 100%;
+}
