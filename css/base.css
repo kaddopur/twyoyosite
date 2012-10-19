@@ -27,13 +27,8 @@ body {
 }
 #social-link a {
   padding: 0;
-}
-#social-link a img {
-  margin: 8px;
-  height: 24px;
-  width: 24px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  padding-top: 14px;
+  font-size: 24px;
 }
 h1 {
   color: #211e55;

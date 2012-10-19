@@ -23,12 +23,3 @@ h3 {
 .profile img {
   width: 96%;
 }
-.profile .fb-link {
-  position: relative;
-  top: 15px;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-.profile .fb-link:hover {
-  text-decoration: none;
-}
