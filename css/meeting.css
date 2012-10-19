@@ -26,6 +26,20 @@ h3 {
 .profile a {
   text-decoration: none;
 }
-.profile iframe {
-  width: 100%;
+.profile .fb-link {
+  position: relative;
+  top: 15px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+dl .icon-map-marker {
+  position: relative;
+  top: 0;
+  margin-left: 4px;
+  color: #d0104c;
+  font-size: 20px;
+}
+dl .icon-map-marker:hover {
+  top: -2px;
 }
