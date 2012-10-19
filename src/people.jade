@@ -5,7 +5,7 @@ append css
 
 block page
   .container
-    .row.profile
+    .row
       .span12
         h1 &#9700;名人集
         h2#top-player.section_title 頂尖選手
@@ -17,10 +17,9 @@ block page
             a(href='/people#') 名人集
             span.divider / 
           li.active 頂尖選手
+    .row.profile
       .span3
-        h3 
-          i.icon-user
-          | 郭子瑋 (瑋魚)
+        h3 郭子瑋 (瑋魚)
         img.img-polaroid(src='/img/profile/ziwei.jpg')
         dl
           dt 個人簡介
@@ -42,9 +41,7 @@ block page
           dd
             a(href='https://www.facebook.com/kuo.t.wei.3') https://www.facebook.com/kuo.t.wei.3
       .span3
-        h3 
-          i.icon-user
-          | 黃麟凱 (阿凱)
+        h3 黃麟凱 (阿凱)
         img.img-polaroid(src='/img/profile/linkai.jpg')
         dl
           dt 個人簡介
@@ -67,9 +64,31 @@ block page
           dd
             a(href='https://www.facebook.com/linkai.huang') https://www.facebook.com/linkai.huang
       .span3
-        h3 
-          i.icon-user
-          | 曾弘傑 (Jei)
+        h3 盧彥霖 (陰影)
+        img.img-polaroid(src='/img/profile/shadol.jpg')
+        dl
+          dt 個人簡介
+          dd Hello，我來自台北。溜溜球只要努力它就會動給你看，但是如何動得漂亮、動得出色又是一門學問了。
+          dt 地區
+          dd 台北
+          dt 專長花式
+          dd 1A單手線上花式
+          dt 所屬隊伍/團體
+          dd Eigenstate, 台北聚會
+          dt 起始年份
+          dd 2005
+          dt 重要賽事頭銜
+          dd
+            ul.unstyled
+              li 2012 MOYOSTAGE 1A 亞軍
+              li 2010 台灣溜溜球大賽 TYYC 1A 冠軍
+              li 2009 台灣溜溜球大賽 TYYC 1A 冠軍
+              li 2008 台灣溜溜球大賽 TYYC 1A 冠軍
+          dt Facebook
+          dd
+            a(href='https://www.facebook.com/shadol.lu') https://www.facebook.com/shadol.lu
+      .span3
+        h3 曾弘傑 (Jei)
         img.img-polaroid(src='/img/profile/jei.jpg')
         dl
           dt 個人簡介
@@ -96,10 +115,9 @@ block page
           dt Facebook
           dd
             a(href='https://www.facebook.com/hungchieh.tseng') https://www.facebook.com/hungchieh.tseng
+    .row.profile
       .span3
-        h3 
-          i.icon-user
-          | 余宗倫 (Allen)
+        h3 余宗倫 (Allen)
         img.img-polaroid(src='/img/profile/zonglun.jpg')
         dl
           dt 個人簡介
