@@ -1,0 +1,71 @@
+extends base
+
+append css
+  link(rel='stylesheet', href='/css/intro.css')
+
+append js
+  script(src='/js/bootstrap.min.js')
+  script
+    $(document).ready(function(){
+      $('#nav_intro').addClass('active');
+      $('body').attr('data-spy', 'scroll').attr('data-target', '.span3').attr('data-offset', '80');
+    });
+
+    
+block page
+  .container
+    .row
+      .span12
+        h1 &#9700;入門須知
+    .row
+      .span9
+        h2#safety.section_title.shift 　安全事項
+        h2#parent-info.section_title.shift 　給家長的資訊
+        //-ul.breadcrumb
+          li
+            a(href='/#') 首頁
+            span.divider / 
+          li
+            a(href='/intro#') 入門需知
+            span.divider / 
+          li
+            a(href='/intro#parent-info') 給家長的資訊
+            span.divider / 
+          li.active 安全事項
+        // p content
+        h2#player-info.section_title.shift 　給玩家的資訊
+        h3#yoyo-selection.sub_title.shift &#9700;溜溜球的選擇
+        h3#string-selection.sub_title.shift &#9700;溜溜球繩的選擇
+        h3#string-adjust.sub_title.shift &#9700;球繩長度調節
+        h3#ring.sub_title.shift &#9700;指環製作
+        h3#tie.sub_title.shift &#9700;球繩綁法
+        h3#wind-up.sub_title.shift &#9700;如何捲繩
+        h3#hold.sub_title.shift &#9700;持球方式
+        h3#throw.sub_title.shift &#9700;基本投擲方式
+      .span3(data-spy='affix', data-offset-top='280')
+        ul.nav.nav-list
+          li.nav-header 安全事項
+          li
+            a(href='#safety') 安全事項
+          li.nav-header 給家長的資訊
+          li
+            a(href='#parent-info') 給家長的資訊
+          li.nav-header 給玩家的資訊
+          li
+            a(href='#yoyo-selection') 溜溜球的選擇
+          li
+            a(href='#string-selection') 溜溜球繩的選擇
+          li
+            a(href='#string-adjust') 球繩長度調節
+          li
+            a(href='#ring') 指環製作
+          li
+            a(href='#tie') 球繩綁法
+          li
+            a(href='#wind-up') 如何捲繩
+          li
+            a(href='#hold') 持球方式
+          li
+            a(href='#throw') 基本投擲方式
+      #space.span6
+      

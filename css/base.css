@@ -19,6 +19,7 @@ body {
   height: 1px;
 }
 #main_nav #logo img {
+  height: 36px;
   position: relative;
   top: -8px;
 }

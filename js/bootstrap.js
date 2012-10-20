@@ -1156,7 +1156,7 @@
       , offset = this.options.offset
       , offsetBottom = offset.bottom
       , offsetTop = offset.top
-      , reset = 'affix affix-top affix-bottom'
+      , reset = 'affix affix-top affix-bottom offset9'
       , affix
 
     if (typeof offset != 'object') offsetBottom = offsetTop = offset
@@ -1173,7 +1173,7 @@
     this.affixed = affix
     this.unpin = affix == 'bottom' ? position.top - scrollTop : null
 
-    this.$element.removeClass(reset).addClass('affix' + (affix ? '-' + affix : ''))
+    this.$element.removeClass(reset).addClass('affix' + (affix ? '-' + affix : ' offset9'))
   }
 
 

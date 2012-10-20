@@ -26,28 +26,10 @@ class MainHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('index.html')
     self.response.out.write(template.render(template_values))
 
-class WhatHandler(webapp2.RequestHandler):
+class IntroHandler(webapp2.RequestHandler):
   def get(self):
     template_values = {}
-    template = jinja_environment.get_template('what.html')
-    self.response.out.write(template.render(template_values))
-
-class KnowHandler(webapp2.RequestHandler):
-  def get(self):
-    template_values = {}
-    template = jinja_environment.get_template('know.html')
-    self.response.out.write(template.render(template_values))
-
-class SelectHandler(webapp2.RequestHandler):
-  def get(self):
-    template_values = {}
-    template = jinja_environment.get_template('select.html')
-    self.response.out.write(template.render(template_values))
-
-class PrepareHandler(webapp2.RequestHandler):
-  def get(self):
-    template_values = {}
-    template = jinja_environment.get_template('prepare.html')
+    template = jinja_environment.get_template('intro.html')
     self.response.out.write(template.render(template_values))
 
 class MeetingHandler(webapp2.RequestHandler):
@@ -63,6 +45,7 @@ class PeopleHandler(webapp2.RequestHandler):
     self.response.out.write(template.render(template_values))
 
 app = webapp2.WSGIApplication([('/', MainHandler),
+                               ('/intro', IntroHandler),
                                ('/meeting', MeetingHandler),
                                ('/people', PeopleHandler)],
                               debug=True)
