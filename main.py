@@ -32,6 +32,12 @@ class IntroHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('intro.html')
     self.response.out.write(template.render(template_values))
 
+class TutorialHandler(webapp2.RequestHandler):
+  def get(self):
+    template_values = {}
+    template = jinja_environment.get_template('tutorial.html')
+    self.response.out.write(template.render(template_values))
+
 class MeetingHandler(webapp2.RequestHandler):
   def get(self):
     template_values = {}
@@ -46,6 +52,7 @@ class PeopleHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([('/', MainHandler),
                                ('/intro', IntroHandler),
+                               ('/tutorial', TutorialHandler),
                                ('/meeting', MeetingHandler),
                                ('/people', PeopleHandler)],
                               debug=True)

@@ -1,0 +1,51 @@
+extends base
+
+append css
+  link(rel='stylesheet', href='/css/tutorial.css')
+
+append js
+  script(src='/js/bootstrap.min.js')
+  script(src='/js/tutorial.js')
+
+block page
+  .container
+    .row
+      .span12
+        h1 &#9700;影音教學
+    .row
+      .span9
+        h2#tutorial.section_title.shift 　影音教學
+        h3#beginner.sub_title.shift &#9700;入門玩家
+        .row
+          .span6
+        h3#junior.sub_title.shift &#9700;初學玩家
+        h3#bind.sub_title.shift &#9700;綁線回收
+        h3#senior.sub_title.shift &#9700;進階玩家
+        h3#1a.sub_title.shift &#9700;單手線上花式(1A)
+        h3#2a.sub_title.shift &#9700;雙手迴旋花式(2A)
+        h3#3a.sub_title.shift &#9700;雙手線上花式(3A)
+        h3#4a.sub_title.shift &#9700;單手離線花式(4A)
+        h3#5a.sub_title.shift &#9700;單手離手花式(5A)
+      .span3(data-spy='affix', data-offset-top='280')
+        ul.nav.nav-list
+          li.nav-header 招式分類
+          li
+            a(href='#beginner') 入門玩家
+          li
+            a(href='#junior') 初學玩家
+          li
+            a(href='#bind') 綁線回收
+          li
+            a(href='#senior') 進階玩家
+          li
+            a(href='#1a') 單手線上花式(1A)
+          li
+            a(href='#2a') 雙手迴旋花式(2A)
+          li
+            a(href='#3a') 雙手線上花式(3A)
+          li
+            a(href='#4a') 單手離線花式(4A)
+          li
+            a(href='#5a') 單手離手花式(5A)
+      #space.span6
+      
