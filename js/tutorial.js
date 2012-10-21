@@ -39,7 +39,8 @@ pageSetup = function() {
     _results.push($("#beginner" + (i + BEGINNER_LIST_LV1.start)).popover({
       'content': "<iframe width='560' height='315' src='http://www.youtube.com/embed/" + trick[2] + "?rel=0' frameborder='0' allowfullscreen></iframe>",
       'placement': 'bottom',
-      'trigger': 'manual'
+      'trigger': 'manual',
+      'title': '<a class="close" href="#">&times;</a>'
     }).click(function(e) {
       $(this).popover('show');
       clickAway = false;
