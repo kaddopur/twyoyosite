@@ -51,8 +51,8 @@ class PeopleHandler(webapp2.RequestHandler):
     self.response.out.write(template.render(template_values))
 
 app = webapp2.WSGIApplication([('/', MainHandler),
-                               #('/intro', IntroHandler),
-                               #('/tutorial', TutorialHandler),
+                               ('/intro', IntroHandler),
+                               ('/tutorial', TutorialHandler),
                                ('/meeting', MeetingHandler),
                                ('/people', PeopleHandler)],
                               debug=True)

@@ -19,34 +19,35 @@ block page
         h1 &#9700;入門須知
     .row
       .span9
-        h2#safety.section_title.shift 　安全事項
+        h2#newbie.section_title.shift 　入門知識
         h2#parent-info.section_title.shift 　給家長的資訊
-        //-ul.breadcrumb
-          li
-            a(href='/#') 首頁
-            span.divider / 
-          li
-            a(href='/intro#') 入門需知
-            span.divider / 
-          li
-            a(href='/intro#parent-info') 給家長的資訊
-            span.divider / 
-          li.active 安全事項
-        // p content
         h2#player-info.section_title.shift 　給玩家的資訊
         h3#yoyo-selection.sub_title.shift &#9700;溜溜球的選擇
         h3#string-selection.sub_title.shift &#9700;溜溜球繩的選擇
         h3#string-adjust.sub_title.shift &#9700;球繩長度調節
         h3#ring.sub_title.shift &#9700;指環製作
         h3#tie.sub_title.shift &#9700;球繩綁法
-        h3#wind-up.sub_title.shift &#9700;如何捲繩
+        .sub_section
+          h3#wind-up.sub_title.shift &#9700;如何捲繩
+          p 
+            | 當你完成了
+            a(href='#string-adjust') 球繩長度調節
+            | 、
+            a(href='#ring') 指環製作
+            | ，並且將繩子正確的固定在手指上與溜溜球上後，我們下一個步驟就是捲繩。過去的溜溜球我們都是隨意的纏繞在溜溜球的軸心上，現在的溜溜球大多採用滾珠軸承，並沒有辦法再用以往的方法來綁緊溜溜球，下面將教你如何正確的捲繩方式。
+          span.label.label-purple 慣用右手
+          ol
+            li 左手拿住球體左半邊
+            li 伸出左手食指
+            li 右手拿住最靠近球體的繩子
+            li 第一圈將繩纏繞在左手食指上
+            li 第二圈開始請避過食指纏繞5圈
+            li 將食指退出一開始的繩子後，右手繼續纏繞至溜溜球抵住右手掌
         h3#hold.sub_title.shift &#9700;持球方式
         h3#throw.sub_title.shift &#9700;基本投擲方式
       .span3(data-spy='affix', data-offset-top='280')
         ul.nav.nav-list
-          li.nav-header 安全事項
-          li
-            a(href='#safety') 安全事項
+          li.nav-header 入門知識
           li.nav-header 給家長的資訊
           li
             a(href='#parent-info') 給家長的資訊

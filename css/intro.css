@@ -18,25 +18,17 @@ h3.sub_title {
   padding-left: 14px;
   font-family: sans-serif;
 }
-.sub {
+.sub_section {
   margin-bottom: 60px;
-}
-.profile {
-  margin-bottom: 80px;
-}
-.profile img {
-  width: 96%;
-}
-.profile .fb-link {
-  position: relative;
-  top: 15px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  text-decoration: none;
 }
 #space {
   height: 1200px;
 }
 .affix {
   top: 50px;
+}
+.label {
+  font-size: 13px;
+  background-color: #f9bf45;
+  padding: 4px;
 }
