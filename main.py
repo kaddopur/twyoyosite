@@ -50,9 +50,16 @@ class PeopleHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('people.html')
     self.response.out.write(template.render(template_values))
 
+class WhatHandler(webapp2.RequestHandler):
+  def get(self):
+    template_values = {}
+    template = jinja_environment.get_template('what.html')
+    self.response.out.write(template.render(template_values))
+
 app = webapp2.WSGIApplication([('/', MainHandler),
                                ('/intro', IntroHandler),
-                               ('/tutorial', TutorialHandler),
                                ('/meeting', MeetingHandler),
-                               ('/people', PeopleHandler)],
+                               ('/people', PeopleHandler),
+                               ('/tutorial', TutorialHandler),
+                               ('/what', WhatHandler)],
                               debug=True)
