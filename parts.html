@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <title>yo-yo.tw 溜溜球情報、教學、交流</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#nav_what').addClass('active');
+        $('body').attr('data-spy', 'scroll').attr('data-target', '.span3').attr('data-offset', '80');
+        $('.img-lightbox-nav li').hover(
+          function() {
+            target = $(this).data('target');
+            top = $(this).data('y');
+            left = $(this).data('x');
+            $(target).css('opacity', '.8');
+            $('.img-lightbox img').css('left', left).css('width', '1200px');
+            $('#img-base').css('left', left).css('width', '1200px');
+          },
+          function() {
+            target = $(this).data('target');
+            $(target).css('opacity', '0');
+            $('.img-lightbox img').css('left', 0).css('width', '100%');
+            $('#img-base').css('left', 0).css('width', '100%');
+          });
+        $('.img-lightbox-nav li').click(
+          function(){
+            $(this).mouseenter();
+          });
+      });
+      
+      
+    </script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="css/what.css">
+    <link rel="stylesheet" href="css/parts.css">
+  </head>
+  <body>
+    <div id="main_nav" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <ul class="nav">
+            <li id="logo"><a href="/#"><img src="/img/nav_logo.png"></a></li>
+            <li id="nav_what"><a href="/what#">溜溜球是什麼？</a></li>
+            <li id="nav_people"><a href="/people#">名人集</a></li>
+            <li id="nav_meeting"><a href="/meeting#">聚會資訊</a></li>
+          </ul>
+          <ul class="nav pull-right">
+            <li id="youtube-link"><a href="http://www.youtube.com/user/officialyoyotw/videos" target="_blank"><i class="icon-play icon-large"></i><i class="icon-sign-blank icon-large"></i></a></li>
+            <li id="fb-link"><a href="https://www.facebook.com/pages/yo-yotw-%E6%BA%9C%E6%BA%9C%E7%90%83%E6%83%85%E5%A0%B1%E6%95%99%E5%AD%B8%E4%BA%A4%E6%B5%81/421497014580985?fref=ts" target="_blank"><i class="icon-facebook-sign icon-large"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h1>◤部位介紹</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span9">
+          <h2 id="base" class="section_title shift">　大部分解</h2>
+          <div class="sub_section">
+            <div class="row">
+              <div class="span2">
+                <div class="img-lightbox-nav">
+                  <ul class="unstyled">
+                    <li data-target="#yoyo-qiuti" data-x="-530px">球體（半面）</li>
+                    <li data-target="#yoyo-biaomian" data-x="-530px">球體表面</li>
+                    <li data-target="#yoyo-neibi" data-x="-530px">球體內壁</li>
+                    <li data-target="#yoyo-waichun" data-x="-530px">球體外唇</li>
+                    <li data-target="#yoyo-muzhigou" data-x="-530px">拇指溝</li>
+                    <li data-target="#yoyo-waigai" data-x="-350px">外蓋（火罩）</li>
+                    <li data-target="#yoyo-dianpian" data-x="-120px">墊片</li>
+                    <li data-target="#yoyo-dianpianzuo" data-x="-120px">墊片座</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="span7">
+                <div class="img-lightbox"><img id="img-base" src="img/parts/parts-base.jpg"><img id="yoyo-qiuti" src="img/parts/parts-qiuti.png"><img id="yoyo-biaomian" src="img/parts/parts-biaomian.png"><img id="yoyo-neibi" src="img/parts/parts-neibi.png"><img id="yoyo-waichun" src="img/parts/parts-waichun.png"><img id="yoyo-muzhigou" src="img/parts/parts-muzhigou.png"><img id="yoyo-waigai" src="img/parts/parts-waigai.png"><img id="yoyo-dianpian" src="img/parts/parts-dianpian.png"><img id="yoyo-dianpianzuo" src="img/parts/parts-dianpianzuo.png"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-spy="affix" data-offset-top="280" class="span3">
+          <ul class="nav nav-list">
+            <li><a href="#base">大部分解</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="span2">
+            <dl>
+              <dt>Designed by </dt>
+              <dd> <a href="http://twitter.com/kaddopur" target="_blank">@kaddopur</a></dd>
+              <p></p>
+              <dt>Sponsored by</dt>
+              <dd><a href="http://www.adegle.com/" target="_blank"><img src="/img/adegle_logo.png"></a></dd>
+            </dl>
+          </div>
+          <div id="cc" class="span2"><small>
+               
+              <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/deed.zh_TW"><img alt="創用 CC 授權條款" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/tw/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">yo-yo.tw 溜溜球情報、教學、交流</span>由<a xmlns:cc="http://creativecommons.org/ns#" href="https://www.facebook.com/linkai.huang" property="cc:attributionName" rel="cc:attributionURL">黃麟凱</a>製作，以<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/tw/deed.zh_TW">創用CC 姓名標示-非商業性-相同方式分享 3.0 台灣 授權條款</a>釋出。</small></div>
+          <div class="span8"><small class="pull-right"><a href="#">回到頂端</a></small></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
