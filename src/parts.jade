@@ -1,0 +1,71 @@
+extends base
+
+append css
+  link(rel='stylesheet', href='css/what.css')
+  link(rel='stylesheet', href='css/parts.css')
+append js
+  script(src='/js/bootstrap.min.js')
+  script
+    $(document).ready(function(){
+      $('#nav_what').addClass('active');
+      $('body').attr('data-spy', 'scroll').attr('data-target', '.span3').attr('data-offset', '80');
+      $('.img-lightbox-nav li').hover(
+        function() {
+          target = $(this).data('target');
+          top = $(this).data('y');
+          left = $(this).data('x');
+          $(target).css('opacity', '.8');
+          $('.img-lightbox img').css('left', left).css('width', '1200px');
+          $('#img-base').css('left', left).css('width', '1200px');
+        },
+        function() {
+          target = $(this).data('target');
+          $(target).css('opacity', '0');
+          $('.img-lightbox img').css('left', 0).css('width', '100%');
+          $('#img-base').css('left', 0).css('width', '100%');
+        });
+      $('.img-lightbox-nav li').click(
+        function(){
+          $(this).mouseenter();
+        });
+    });
+
+
+block page
+  .container
+    .row
+      .span12
+        h1 ◤部位介紹
+    .row
+      .span9
+        h2#base.section_title.shift 　大部分解
+        .sub_section
+          .row
+            .span2
+              .img-lightbox-nav
+                ul.unstyled
+                  li(data-target='#yoyo-qiuti', data-x='-530px',) 球體（半面）
+                  li(data-target='#yoyo-biaomian', data-x='-530px') 球體表面
+                  li(data-target='#yoyo-neibi', data-x='-530px',) 球體內壁
+                  li(data-target='#yoyo-waichun', data-x='-530px') 球體外唇
+                  li(data-target='#yoyo-muzhigou', data-x='-530px') 拇指溝
+                  li(data-target='#yoyo-waigai', data-x='-350px') 外蓋（火罩）
+                  li(data-target='#yoyo-dianpian', data-x='-120px') 墊片
+                  li(data-target='#yoyo-dianpianzuo', data-x='-120px') 墊片座
+            .span7
+              .img-lightbox
+                img#img-base(src='img/parts/parts-base.jpg')
+                img#yoyo-qiuti(src='img/parts/parts-qiuti.png')
+                img#yoyo-biaomian(src='img/parts/parts-biaomian.png')
+                img#yoyo-neibi(src='img/parts/parts-neibi.png')
+                img#yoyo-waichun(src='img/parts/parts-waichun.png')
+                img#yoyo-muzhigou(src='img/parts/parts-muzhigou.png')
+                img#yoyo-waigai(src='img/parts/parts-waigai.png')
+                img#yoyo-dianpian(src='img/parts/parts-dianpian.png')
+                img#yoyo-dianpianzuo(src='img/parts/parts-dianpianzuo.png')
+                
+                
+      .span3(data-spy='affix', data-offset-top='280')
+        ul.nav.nav-list
+          li
+            a(href='#base') 大部分解
