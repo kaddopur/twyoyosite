@@ -12,19 +12,27 @@ h2.section_title {
   line-height: 48px;
   margin-bottom: 40px;
 }
+h2.section_title:before {
+  content: '　';
+}
 h3.sub_title {
   color: #211e55;
   font-size: 20px;
   line-height: 32px;
   padding-left: 14px;
   font-family: sans-serif;
+  position: relative;
+  left: -14px;
+}
+h3.sub_title:before {
+  content: '◤';
 }
 .sub_section {
   margin-bottom: 60px;
   font-size: 1.2em;
   line-height: 1.5em;
 }
-.sub_section:first-letter {
+.sub_section > p:first-child:first-letter {
   font-size: 2.5em;
   color: #211e55;
 }
@@ -41,6 +49,9 @@ h3.sub_title {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 7em;
+  }
   .img-frame {
     width: 210px;
   }
