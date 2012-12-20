@@ -1,17 +1,16 @@
 .img-lightbox {
   position: relative;
   overflow: hidden;
-  height: 683px; }
+  height: 520px; }
   .img-lightbox img {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
     opacity: 0;
-    -webkit-transition: all .8s ease-in-out;
-    width: 100%;
-    max-width: 1200px; }
-  .img-lightbox #img-base {
+    -webkit-transition: all .6s ease-in-out;
+    width: 100%; }
+  .img-lightbox .img-base {
     z-index: 1;
     opacity: 1; }
 
