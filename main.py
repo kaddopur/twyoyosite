@@ -62,11 +62,19 @@ class PartsHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('parts.html')
     self.response.out.write(template.render(template_values))
 
+class KnowledgeHandler(webapp2.RequestHandler):
+  def get(self):
+    template_values = {}
+    template = jinja_environment.get_template('knowledge.html')
+    self.response.out.write(template.render(template_values))
+
+
 app = webapp2.WSGIApplication([('/', MainHandler),
-                               ('/intro', IntroHandler),
+                               # ('/intro', IntroHandler),
                                ('/meeting', MeetingHandler),
-                               ('/parts', PartsHandler),
+                               # ('/parts', PartsHandler),
+                               ('/knowledge', KnowledgeHandler),
                                ('/people', PeopleHandler),
-                               ('/tutorial', TutorialHandler),
+                               # ('/tutorial', TutorialHandler),
                                ('/what', WhatHandler)],
                               debug=True)

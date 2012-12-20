@@ -16,6 +16,8 @@ h2.section_title
   background-color color_konkikyo
   line-height 48px
   margin-bottom 40px
+  &:before
+    content '　'
 
 h3.sub_title
   color color_konkikyo
@@ -23,12 +25,16 @@ h3.sub_title
   line-height 32px
   padding-left 14px
   font-family sans-serif
+  position relative
+  left -14px
+  &:before
+    content '◤'
 
 .sub_section
   margin-bottom 60px
   font-size 1.2em
   line-height 1.5em
-  &:first-letter
+  & > p:first-child:first-letter
     font-size 2.5em
     color color_konkikyo
   & > p
@@ -43,6 +49,8 @@ h3.sub_title
   margin-bottom 60px
 
 @media screen and (max-width: 1200px)
+  h1
+    font-size 7em
   .img-frame
     width 210px
 
