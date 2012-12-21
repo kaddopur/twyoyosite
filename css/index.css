@@ -1,6 +1,16 @@
-#cover {
-  padding-bottom: 325px;
+#content {
+  padding-top: 60px;
 }
-#cover img {
-  width: 100%;
+#cover {
+  height: 600px;
+  padding-top: 120px;
+  background: url("/img/cover.png") top right no-repeat;
+}
+#cover h1 {
+  font-size: 4em;
+  line-height: 1.2em;
+}
+#cover p {
+  font-size: 2em;
+  letter-spacing: 0.8em;
 }
