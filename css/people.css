@@ -11,6 +11,9 @@ h2.section_title {
   background-color: #211e55;
   line-height: 48px;
 }
+h2.section_title:before {
+  content: '　';
+}
 h3 {
   color: #211e55;
   font-size: 20px;
