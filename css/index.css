@@ -2,15 +2,24 @@
   padding-top: 60px;
 }
 #cover {
-  height: 600px;
-  padding-top: 120px;
-  background: url("/img/cover.png") top right no-repeat;
+  border-radius: 10px;
+  height: 675px;
+  margin-bottom: 20px;
+  background: url("/img/cover.jpg") top right no-repeat;
 }
 #cover h1 {
+  color: #fcfaf2;
   font-size: 4em;
+  left: 40px;
   line-height: 1.2em;
+  position: relative;
+  top: 40px;
 }
 #cover p {
-  font-size: 2em;
-  letter-spacing: 0.8em;
+  position: relative;
+  left: 40px;
+  top: 40px;
+  color: #8b81c3;
+  font-size: 1.6em;
+  letter-spacing: 0.6em;
 }
