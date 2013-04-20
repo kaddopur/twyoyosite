@@ -23,3 +23,8 @@
   font-size: 1.6em;
   letter-spacing: 0.6em;
 }
+#cover button {
+  position: relative;
+  left: 40px;
+  top: 80px;
+}

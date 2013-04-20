@@ -1,0 +1,140 @@
+extends base
+
+append css
+  link(rel='stylesheet', href='css/what.css')
+  link(rel='stylesheet', href='css/parts.css')
+
+append js
+  script(src='/js/bootstrap.min.js')
+  script
+    $(document).ready(function(){
+      $('#nav_choose').addClass('active');
+      $('title').text('選購指南 | yo-yo.tw')
+      $('body').attr('data-spy', 'scroll').attr('data-target', '.span3').attr('data-offset', '80');
+      $('.img-lightbox-nav li').hover(
+        function() {
+          target = $(this).data('target');
+          $(target).css('opacity', '.8');
+        },
+        function() {
+          target = $(this).data('target');
+          $(target).css('opacity', '0');
+        });
+      $('.img-lightbox-nav li').click(
+        function(){
+          $(this).mouseenter();
+        });
+    });
+
+
+block page
+  .container
+    .row
+      .span12
+        h1 ◤選購指南
+    .row
+      .span9
+        h2#direction.section_title.shift 選購方向
+        .row
+          .span6
+            .sub_section
+              h3.sub_title 入門玩家（第一次接觸溜溜球）
+              p 從未接觸過溜溜球的玩家，或是年紀較輕的玩家，適合使用離合器式、尼龍軸承式的全能型溜溜球。這種溜溜球空轉速度、回收力量、速度皆較低，易於回收、保養方便，適合培養溜溜球的控制手感。可以練習基礎傳統招式，像是東京鐵塔、時鐘搖擺或是火箭…等等這類招式，這種球不僅相當的便宜，絕對是入門的最佳選擇。
+          //
+            .span3
+              .img-frame
+                img.img-polaroid(src='img/knowledge/thumbnail/material_01.jpg')
+                p 原木溜溜球
+          .span6
+            .sub_section  
+              h3.sub_title 初學玩家溜溜球
+              p 開始進入初學招式，適合軸承式全能型溜溜球，軸承式的溜溜球能夠產生較多的空轉時間外，更可以更改溜溜球上的繩圈數，增加收發球力道。這種溜溜球不僅適合傳統溜溜球招式，稍難的編繩招式、快打花式也難不倒它。此外，上線招式也可以開始使用此球種開始練習，以增進日後上線類型招式的基本準確率。
+          .span6
+            .sub_section  
+              h3.sub_title 初級玩家溜溜球
+              p 開始進入上線類型的招式後，適合使用軸承式蝶翼型塑膠溜溜球，空轉時間更長、上線有效範圍加大，需要注意的是，上線準確率是因球體的造型設計而造成準確率的上升，因此許多玩家會誤會自己的上線率夠了而不持續練習上線準確率。另外蝶翼型溜溜球的球體間距都比較大，回收力將會比全能型溜溜球更低，必須開始學習綁線收球。
+          .span6
+            .sub_section  
+              h3.sub_title 單手線上花式(1A)用溜溜球（進階玩家）
+              p 開始進入單手線上花式的玩家，可以開始使用更高階的內加重環、外加重環或是全金屬材質溜溜球。強大的空轉力與球體穩定性可以連接更多招式，更寬的球體間距能在軸承上交疊更多的線段，做出更多複雜的花式，但是此類球種重量大多在66g以上，使用上必須十分注意安全與溜溜球線的狀態。
+          .span6
+            .sub_section  
+              h3.sub_title 雙手迴旋花式(2A)用溜溜球
+              p
+                | 大多數雙手迴旋玩家選用軸承式星紋回收系統的全能型溜溜球，著重於油品濃度、回收寬度、墊片高度...等等。各個部位皆有不同的微調方法與效果，這部份請持續追蹤我們的
+                a(href='/column') 連載專欄
+                | 。
+          .span6
+            .sub_section  
+              h3.sub_title 雙手線上花式(3A)用溜溜球
+              p 基本上與單手線上花式用溜溜球相同，推薦使用相同的球種與相同的回收配置。建議先熟悉左手的綁線回收技巧後在來進行練習。
+          .span6
+            .sub_section  
+              h3.sub_title 離線花式(4A)用溜溜球
+              p 通常使用較大、較重的離線型溜溜球，除了在球體外型設計上增加了玩家的接球寬度外，球體間距也比線上花式用溜溜球還要來得窄，以增進重生技巧與拉球技巧的收發球力，以全塑膠球體較為常見，部份廠商還有製作軟膠外環的離線溜溜球，增加耐用度。
+          .span6
+            .sub_section  
+              h3.sub_title 離手花式(5A)用溜溜球
+              p 與單手線上花式用溜溜球相同，但是較著重於重物的重量與大小。一般練習時建議使用蝶翼型塑膠球來進行訓練，一方面購入價格較低外，也比較耐用。這邊推薦使用重量在66g以上的溜溜球，並搭配Duncan公司所附贈的重物來進行練習。
+        h2#responsive.section_title.shift 回收力敏感的溜溜球
+        .row
+          .span6
+            .sub_section
+              p 基本上全能型溜溜球大多為此種設計，適合入門、初學玩家，可以訓練溜溜球的空轉、收發球手感，且可練習簡單的溜溜球招式與快打招式。
+        h2#bind.section_title.shift 需綁線回收的溜溜球
+        .row
+          .span6
+            .sub_section
+              p 蝶翼型溜溜球大多採用綁線回收設計，回收力較低，空轉力較佳，線上滑順度也較佳，適合初級至進階玩家使用。一開始不習慣綁線收球法的玩家可以在軸承處增加繩圈數或是上油，以增加回收力。
+        h2#meterial.section_title.shift 材質挑選
+        .row
+          .span6
+            .sub_section
+              p 一般練習、外出使用可以選擇塑膠球，除了便宜以外，也相當耐用。而其餘材質的溜溜球經撞擊後有可能造成空轉時劇烈抖動或是軸心變形的問題，皆有無法修復的可能，請考量購買的預算與自身技巧程度來選購。
+                a(href='/knowledge#material') [材質分類]
+        h2#shape.section_title.shift 球形挑選
+        .row
+          .span6
+            .sub_section
+              p 球形主要決定收發時在手中的感覺，除了全能型溜溜球的握感差異不大外，建議要購入蝶翼型的玩家們，可以直接到
+                a(href='/meeting') 各地聚會
+                | 跟其他玩家們借用不同外形的溜溜球親自體驗。
+                a(href='/knowledge#shape') [球形分類]
+        h2#bearing.section_title.shift 軸承類型挑選
+        .row
+          .span6
+            .sub_section
+              p 不同的軸承有不同的收發球手感與線上表現，可以到聚會向玩家借用。初學玩家可以選用Bearing A或Bearing E小軸承類型溜溜球，訓練收發球技巧與空轉穩定度。進階玩家可以挑選Bearing C或Bearing D等寬大型軸承，增進空轉時間與軸承的容線空間，清洗也較為方便。
+                a(href='/knowledge#axle') [軸承系統分類]
+        h2#response.section_title.shift 回收系統挑選
+        .row
+          .span6
+            .sub_section
+              p 入門玩家適合離合器回收系統溜溜球，非常容易回到手上，並且可以熟悉球體空轉強度與手感。初學及初級玩家適合星紋回收系統、O環回收系統與膠貼回收系統，明確的回收手感，非常適合練習初學招式與綁線收球。進階玩家適合低回收力的矽膠回收系統，可以有較多的空轉與容線空間，適合任何難度與種類的招式。
+                a(href='/knowledge#response') [回收系統分類]
+        h2#weight.section_title.shift 球徑與重量
+        .row
+          .span6
+            .sub_section
+              p 球體直徑與重量沒有一定的關係，重的球、大的球一定會有較好的性能表現，但是相對的對手指的負擔較大，初階玩家就相當不適合此類的球。
+              p 初學，初級玩家適合直徑53mm~56mm，重量約60g~63g的溜溜球，手指負擔較輕，大小適中，方便練習各種初學招式以及綁線回收。
+              p 進階玩家適合直徑50mm~58mm，重量約60g~68g的溜溜球，在此規格內有更多的選擇，溜溜球有更佳的性能，或是靈活性更佳，可以多多測試找出適合自己大小與重量的溜溜球。
+      .span3(data-spy='affix', data-offset-top='280')
+        ul.nav.nav-list
+          li
+            a(href='#direction') 選購方向
+          li
+            a(href='#responsive') 回收力敏感的溜溜球
+          li
+            a(href='#bind') 需綁線回收的溜溜球
+          li
+            a(href='#meterial') 材質挑選
+          li
+            a(href='#shape') 球形挑選
+          li
+            a(href='#bearing') 軸承類型挑選
+          li
+            a(href='#response') 回收系統挑選
+          li
+            a(href='#weight') 球徑與重量
+

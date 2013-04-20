@@ -1,0 +1,18 @@
+.column-body {
+  font-size: 1.1em;
+  margin-bottom: 80px; }
+  .column-body h4 {
+    margin-top: 2em; }
+  .column-body em, .column-body strong {
+    color: #d0104c; }
+  .column-body .cover {
+    margin-bottom: 40px; }
+
+.column-footer {
+  margin-bottom: 80px; }
+  .column-footer > h4 {
+    color: #999; }
+  .column-footer a {
+    position: relative;
+    top: 2px;
+    text-decoration: none; }

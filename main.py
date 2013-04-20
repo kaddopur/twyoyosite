@@ -50,6 +50,12 @@ class PeopleHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('people.html')
     self.response.out.write(template.render(template_values))
 
+class ColumnHandler(webapp2.RequestHandler):
+  def get(self):
+    template_values = {}
+    template = jinja_environment.get_template('column.html')
+    self.response.out.write(template.render(template_values))
+
 class WhatHandler(webapp2.RequestHandler):
   def get(self):
     template_values = {}
@@ -68,13 +74,21 @@ class KnowledgeHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('knowledge.html')
     self.response.out.write(template.render(template_values))
 
+class ChooseHandler(webapp2.RequestHandler):
+  def get(self):
+    template_values = {}
+    template = jinja_environment.get_template('choose.html')
+    self.response.out.write(template.render(template_values))
+
 
 app = webapp2.WSGIApplication([('/', MainHandler),
                                # ('/intro', IntroHandler),
                                ('/meeting', MeetingHandler),
                                # ('/parts', PartsHandler),
                                ('/knowledge', KnowledgeHandler),
+                               ('/choose', ChooseHandler),
                                ('/people', PeopleHandler),
+                               ('/column', ColumnHandler),
                                # ('/tutorial', TutorialHandler),
                                ('/what', WhatHandler)],
                               debug=True)

@@ -1,0 +1,27 @@
+$color_karakurenai: #D0104C;
+
+.column-body {
+  font-size: 1.1em;
+  margin-bottom: 80px;
+  h4 {
+    margin-top: 2em;
+  }
+  em, strong {
+    color: $color_karakurenai;
+  }
+  .cover {
+    margin-bottom: 40px;
+  }
+}
+
+.column-footer {
+  & > h4 {
+    color: #999;
+  }
+  margin-bottom: 80px;
+  a {
+    position: relative;
+    top: 2px;
+    text-decoration: none;
+  }
+}
