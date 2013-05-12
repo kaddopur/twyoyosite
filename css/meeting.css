@@ -26,20 +26,19 @@ h3 {
 .profile a {
   text-decoration: none;
 }
-.profile .fb-link {
+.profile .fb-link,
+.profile .map-link {
   position: relative;
   top: 15px;
   margin-bottom: 10px;
+  margin-right: 12px;
   font-size: 20px;
   text-decoration: none;
 }
-dl .icon-map-marker {
-  position: relative;
-  top: 0;
-  margin-left: 4px;
-  color: #d0104c;
-  font-size: 20px;
+.profile .fb-link:hover,
+.profile .map-link:hover {
+  top: 14px;
 }
-dl .icon-map-marker:hover {
-  top: -2px;
+.profile .map-link {
+  color: #d0104c;
 }
