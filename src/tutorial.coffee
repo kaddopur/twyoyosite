@@ -1,6 +1,7 @@
-BEGINNER_LIST_LV1 = {'caption': '入門玩家 Lv1', \
-                     'start': 1, \
-                     'tricks': [['Windmill', '3 reps', '0o3anZdp0Xw'], ['360', 'shoulder', 'oZY8mMsMf1k']]}
+BEGINNER_LIST_LV1 = {'start': 1, \
+                     'tricks': [['時鐘搖擺 Rock the Baby', '穿越3次', 'sOgKJ9J8sf8'],
+                                ['一收一放 Gravity Pull', '3次', 'yWj1Tvfcqvk'],
+                                ['地球自轉 Sleeper', '持續5秒', 'miMAzZ1Ipvg'],]}
 
 TABLE_TEMPLATE = "<table class='table table-condensed table-hover'>
                    <caption><h4></h4></caption>
@@ -37,7 +38,6 @@ pageSetup = ->
 
   # Beginner
   $('#beginner ~ .row .span6').html(TABLE_TEMPLATE)
-  $('#beginner ~ .row table:last-child h4').text(BEGINNER_LIST_LV1.caption)
   for trick, i in BEGINNER_LIST_LV1.tricks
     $("<tr>
          <td>#{i+BEGINNER_LIST_LV1.start}</td>

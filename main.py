@@ -80,6 +80,12 @@ class ChooseHandler(webapp2.RequestHandler):
     template = jinja_environment.get_template('choose.html')
     self.response.out.write(template.render(template_values))
 
+class TutorialHandler(webapp2.RequestHandler):
+  def get(self):
+    template_values = {}
+    template = jinja_environment.get_template('tutorial.html')
+    self.response.out.write(template.render(template_values))
+
 
 app = webapp2.WSGIApplication([('/', MainHandler),
                                # ('/intro', IntroHandler),
@@ -89,6 +95,6 @@ app = webapp2.WSGIApplication([('/', MainHandler),
                                ('/choose', ChooseHandler),
                                ('/people', PeopleHandler),
                                ('/column', ColumnHandler),
-                               # ('/tutorial', TutorialHandler),
+                               ('/tutorial', TutorialHandler),
                                ('/what', WhatHandler)],
                               debug=True)
